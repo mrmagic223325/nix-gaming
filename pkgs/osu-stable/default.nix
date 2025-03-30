@@ -24,7 +24,7 @@
   src = builtins.fetchurl rec {
     url = "https://m1.ppy.sh/r/osu!install.exe";
     name = "osuinstall-${lib.strings.sanitizeDerivationName sha256}.exe";
-    sha256 = (builtins.fromJSON (builtins.readFile ./info.json)).hash;
+    sha256 = "1l0rhic9rqb2sivz76nklc0brav8dj80n67wrvv978g5wcjrsjxy";
   };
 
   # concat winetricks args
